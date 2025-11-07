@@ -1,6 +1,6 @@
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
-def load_flan(name="google/flan-t5-large"):
+def load_flan(name="google/flan-t5-base"):
     tok = AutoTokenizer.from_pretrained(name)
     mdl = AutoModelForSeq2SeqLM.from_pretrained(name)
     return tok, mdl
